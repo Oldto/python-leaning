@@ -83,6 +83,7 @@ print('值',name)
 - 八进制--0o开头`print(0o155)`
 - 十六进制--0x开头`print(0x1ef)`
 
+![image](https://user-images.githubusercontent.com/71583369/149529645-83b565c9-45cd-4915-b885-c268ba29fca5.png)
 
 
 
