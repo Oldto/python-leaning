@@ -134,6 +134,35 @@ print(a,b)
 a,b=b,a
 print(a,b)
 ```
+## 比较运算符
+![image](https://user-images.githubusercontent.com/71583369/149617679-b5c628e5-99ca-41c4-8141-4fd11eda4b66.png)
+
+## 布尔运算符
+![image](https://user-images.githubusercontent.com/71583369/149617699-cfd4ce6a-745e-4f3f-85b8-efea64db80ea.png)
+
+not取反   in 在里面  not in 不在里面
+```
+s='helloworld'
+print('h'in s)
+print('k' in s)
+print('h' not in s)
+print('k' not in s)
+```
+## 位运算符
+![image](https://user-images.githubusercontent.com/71583369/149618616-8f1420c1-4ff2-4705-b7d2-dd0bc2aa1210.png)
+
+```
+位移
+print(4 << 1) #向左移1位 相当于成2
+print(4 >> 1) #向右移1位 相当于除2
+```
+## 运算符的优先级
+![image](https://user-images.githubusercontent.com/71583369/149619041-84007da8-62f7-4a25-8f6b-87e0b6c341fd.png)
+
+
+
+
+
 
 
 
