@@ -175,7 +175,17 @@ print(4 >> 1) #向右移1位 相当于除2
 - 空集合
 - 0
 ```
-
+print(bool(False)) #False
+print(bool('')) #空字符串
+print(bool(""))
+print(bool(0)) #0
+print(bool([])) #空列表
+print(bool(list()))
+print(bool({})) #空字典
+print(bool(dict()))
+print(bool(())) #空元组
+print(bool(tuple()))
+print(bool(set())) #空集合
 ```
 其他对象的布尔值为True
 
@@ -183,14 +193,75 @@ print(4 >> 1) #向右移1位 相当于除2
 #### 单分支结构
 ![image](https://user-images.githubusercontent.com/71583369/149623041-aa23b573-8abe-4c6a-8abf-542ecac0ff05.png)
 ```
-if表达式
+if表达式:
  条件执行体
 ```
+代码
+```
+money=2000
+wm=int(input('请输入取款金额：'))
+if wm<=money:
+    money-=wm
+    print(money)
+```
+#### 双分支结构
+```
+# 判断输入的数字奇偶性
+num = int(input('请输入整数：'))
 
+#判断
+if num%2==0:
+    print(num,'是偶数')
+else:
+    print(num,'是奇数')
+```
+#### 多分枝结构
+![image](https://user-images.githubusercontent.com/71583369/149623814-6017fc99-c25d-497e-b6ff-8d30cc59d5ec.png)
+```
+# 成绩判断
+count = int(input('请输入成绩：'))
+if 90<=count<=100:
+    print('A级')
+elif 80<=count<=89:
+    print('B级')
+elif 70<=count<=79:
+    print('C级')
+elif 60<=count<=69:
+    print('D级')
+elif 0<count<=59:
+    print('E级')
+else:
+    print('输入错误')
+```
+#### 嵌套if
+![image](https://user-images.githubusercontent.com/71583369/149625905-5a04662f-a8f9-42db-8c35-95877312da07.png)
+```
+# 购买5000产品打7折 4000产品打8折 3000产品打9折 低于3000打9.5折
+answer=str(input('要买产品嘛？y/n'))
+money=float(input('价格'))
+if answer=='y':
+    if money>5000:
+        print('打7折',money*0.7)
+    elif 4000<=money<=4999:
+        print('打8折',money*0.8)
+    elif 3000<=money<=3999:
+        print('打9折',money*0.9)
+    else:
+        print('打9.5折',money*0.95)
 
-
-
-
+else:
+    print('滚蛋')
+```
+#### 条件表达式
+![image](https://user-images.githubusercontent.com/71583369/149627164-10bd2422-10ac-4565-b411-5c248e58b422.png)
+```
+# 比较大小
+num_a=int(input('请输入第一个整数'))
+num_b=int(input('请输入第二个整数'))
+print(str(num_a)+'大于'+str(num_b) if num_a>num_b else str(num_a)+'小于'+str(num_b))
+```
+## pass语句
+![image](https://user-images.githubusercontent.com/71583369/149627837-2543f1d5-4be8-4421-9f59-e092fff7f7a7.png)
 
 
 
