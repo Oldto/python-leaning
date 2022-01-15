@@ -159,10 +159,33 @@ print(4 >> 1) #向右移1位 相当于除2
 ## 运算符的优先级
 ![image](https://user-images.githubusercontent.com/71583369/149619041-84007da8-62f7-4a25-8f6b-87e0b6c341fd.png)
 
+## 程序的组织结构
+任何程序都可以由顺序结构、判断结构、循环结构构成。
 
+## 对象的布尔值
+在python中所有的对象都有一个布尔值，获取对象布尔值，使用函数bool()
 
+对象的布尔值为False的
+- False
+- None
+- 空字符
+- 空列表
+- 空元素
+- 空字典
+- 空集合
+- 0
+```
 
+```
+其他对象的布尔值为True
 
+## 判断结构
+#### 单分支结构
+![image](https://user-images.githubusercontent.com/71583369/149623041-aa23b573-8abe-4c6a-8abf-542ecac0ff05.png)
+```
+if表达式
+ 条件执行体
+```
 
 
 
