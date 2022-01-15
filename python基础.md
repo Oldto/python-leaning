@@ -107,5 +107,40 @@ str4='''人生苦短，
 
 ![image](https://user-images.githubusercontent.com/71583369/149612761-33803a18-7739-478b-8ab5-4fe556936f02.png)
 
+## 输入函数input()
+
+![image](https://user-images.githubusercontent.com/71583369/149614633-e4bd5e95-a2ce-4dd1-8e4a-991493ede8fc.png)
+
+```
+mq=input('大王想要什么那')
+print(mq)
+
+# 加法运算
+a=input('输入第一个数：')
+b=input('输入第二个数：')
+print(int(a)+int(b))
+```
+## 算数运算符
+![image](https://user-images.githubusercontent.com/71583369/149615253-cba5971c-b7ec-4e61-a7d3-926e528831f3.png)
+
+## 赋值运算符
+![image](https://user-images.githubusercontent.com/71583369/149615329-d8b580f3-a09b-42dd-a8fc-7aa468d8bdc3.png)
+
+解包赋值可进行数据交换
+```
+a,b=10,20
+print(a,b)
+#交换
+a,b=b,a
+print(a,b)
+```
+
+
+
+
+
+
+
+
 
 
