@@ -263,6 +263,96 @@ print(str(num_a)+'大于'+str(num_b) if num_a>num_b else str(num_a)+'小于'+str
 ## pass语句
 ![image](https://user-images.githubusercontent.com/71583369/149627837-2543f1d5-4be8-4421-9f59-e092fff7f7a7.png)
 
+## range()函数
+![image](https://user-images.githubusercontent.com/71583369/149643960-e660d403-9e42-431e-a019-d20477ab0597.png)
+```
+# 不指定起始位,默认从0开始，不包括0，步节为1
+print(list(range(10)))
+
+# 指定起始位和结束位
+print(list(range(1,10)))
+
+# 指定起始位和结束位，指定步节
+print(list(range(1,10,2)))
+```
+相同步节在内存中存储的大小是一样的。
+
+## 循环结构
+![image](https://user-images.githubusercontent.com/71583369/149644794-90dcc45e-8cb6-4e1b-9a81-227abd621547.png)
+```
+# 求出0到4的累加值
+a=0
+count=0
+while a<5:
+    count+=a
+    a+=1
+print('和为',count)
+```
+求1到100之间偶数之和
+```
+a=0
+count=0
+while a<=100:
+    count+=a
+    a+=2
+print(count)
+
+a=1
+sum=0
+while a<=100:
+    if a%2==0:
+        sum+=a
+    a+=1
+print('和为',sum)
+```
+## for in 循环
+![image](https://user-images.githubusercontent.com/71583369/149646076-75a2fec5-d66e-4eb9-8160-e29151ddb2e0.png)
+```
+ # 1-100之间的偶数和，使用for_in
+sum=0
+for i in range(1,101):
+    if i%2==0:
+        sum+=i
+print('和',sum)
+
+# 遍历字符串
+for a in 'python':
+    print(a)
+# 不定义变量使用下划线
+for _ in range(5):
+    print('人生苦短，我用python')
+```
+## 流程控制break
+![image](https://user-images.githubusercontent.com/71583369/149646914-63c1faef-3dd6-47a9-8257-e5ccd1746b25.png)
+```
+'''for i in range(3):
+    pwd=input('请输入密码')
+    if pwd=='888':
+        print('输入正确')
+        break
+    else:
+        print('输入不正确')'''
+
+a=0
+while a<3:
+    pwd=input('请输入密码')
+    if pwd=='888':
+        print('输入正确')
+        break
+    else:
+        print('输入不正确')
+    a+=1
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
