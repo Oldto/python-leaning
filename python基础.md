@@ -450,5 +450,15 @@ print(lst)
 ```
 ##  列表排序
 ![image](https://user-images.githubusercontent.com/71583369/149655126-56c9193a-0a7e-4771-b782-ceffec7b7d3e.png)
+```
+lst=[10,400,300,20,50]
+lst.sort() 升序
+a=sorted() 降序
+a=sorted(lst,reverse=True) 升序
+print(a)
 
+# 生成列表达式
+lst=[i*2 for i in range(1,6)]
+print(lst)
+```
 
