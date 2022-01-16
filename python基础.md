@@ -343,17 +343,112 @@ while a<3:
         print('输入不正确')
     a+=1
 ```
+## 流程控制语句continue
+![image](https://user-images.githubusercontent.com/71583369/149648876-b71dda76-95e4-4d1b-9ab0-e463a43e6da4.png)
+## 嵌套循环
+![image](https://user-images.githubusercontent.com/71583369/149649124-64aa5408-8045-421a-82c7-083412bddcbf.png)
 
+打印三行四列矩形
+```
+for i in range(3):   #执行三次
+    for j in range(4):
+        print('*',end='\t')
+    print('') #打印行数
+```
+乘法表
+```
+for i in range(1,10):      # 打印9行
+    for j in range(1,i+1):  #列数随i的值增加
+        print(i,'*',j,'=',i*j,end='\t')
+    print('')
+```
+## 二层循环中的break和continue
+![image](https://user-images.githubusercontent.com/71583369/149650019-cb4c9b10-a873-4994-88e5-4494561d131a.png)
+## 列表
+![image](https://user-images.githubusercontent.com/71583369/149650637-02e6bb9d-93e2-49ea-9950-e4433017c3ba.png)
 
+创建列表的2种方法
+```
+# 创建列表的第一种用法
+lst=['hello','world',80]
+#创建列表的第二种方法
+list1=list(['hello','world',90])
+```
+## 列表特点
+![image](https://user-images.githubusercontent.com/71583369/149651311-26685c51-2539-4248-af60-7e6ed0b08a89.png)
 
+## 列表查询操作
+![image](https://user-images.githubusercontent.com/71583369/149651644-e5e416da-2a4d-46b1-8e12-af7fcd67fcea.png)
 
+```
+查询列中的指定索引使用index()，当列表中存在多个相同值时，只显示第一次查询到的索引
+lst=['hello','world',80]
+print(lst.index('hello'))  
+获取列表中的单个元素 如获取hello
+print(lst([0])
 
+```
+## 切片操作，取多个元素
+![image](https://user-images.githubusercontent.com/71583369/149652242-7458f2a9-8801-42d3-99db-12a51b653e28.png)
+```
+lst=[10,20,30,40,50,60,70,80] # 默认步长为1 起始位为0 末尾为最后的值
+print(lst[::2])
+print(lst[1:6:2])
+print(lst[::-1])
+print(lst[-1:-6:-1])
+```
+## 列表元素判断和遍历
+```
+判断
+lst=[10,20,30,40,50,60,70,80]
+print(10 in lst)
+print(10 not in lst)
+遍历
+for i in lst:
+    print(i)
+```
+## 列表增加元素
+![image](https://user-images.githubusercontent.com/71583369/149653001-63a80b66-2dad-4e13-9fca-1a7f75b13d08.png)
+```
+lst1=[20,30]
+lst=[10,20,30]
+lst.append(10)
+lst.extend(lst1)
+lst.insert(1,33)
+lst[1:]=lst1
+```
+## 删除元素
+![image](https://user-images.githubusercontent.com/71583369/149654724-1e584fc3-4d91-49ba-bc72-4ae941b870d2.png)
+```
+# 删除指定元素
+lst=[10,20,30,40,50,60]
+lst.remove(20)
+print(lst)
 
+# 索引删除元素
+lst.pop(1)
+print(lst)
 
+#切片删除元素
+lst[1:3]=[]
+print(lst)
+# 清空元素
+lst.clear()
+print(lst)
 
+```
+## 修改元素
+```
+# 修改单个元素,使用索引
+lst=[10,20,30,40]
+lst[2]=100
+print(lst)
 
-
-
-
+# 修改多个于元素，使用切片
+lst[1:3]=[200,300,400]
+print(lst)
+```
+##  列表排序
+![image](https://user-images.githubusercontent.com/71583369/149655126-56c9193a-0a7e-4771-b782-ceffec7b7d3e.png)
 
 
