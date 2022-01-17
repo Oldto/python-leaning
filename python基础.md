@@ -505,6 +505,8 @@ items = a.items() #获取所有的key-value
 for item in a:
     print(item,a[item],a.get(item))
 ```
+## 字典特点
+![image](https://user-images.githubusercontent.com/71583369/149694833-ad3295b5-c28c-4111-84b3-dd8d39acf597.png)
 
 
 
