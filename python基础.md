@@ -500,6 +500,10 @@ a.clear()   #清空字典
 keys = a.keys() #获取所有的key
 values = a.values() #获取所有的value
 items = a.items() #获取所有的key-value
+
+# 字典遍历
+for item in a:
+    print(item,a[item],a.get(item))
 ```
 
 
