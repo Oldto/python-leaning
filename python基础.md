@@ -605,7 +605,8 @@ print(s-s1)
 print(s.symmetric_difference(s1)) #symmetric_difference等价于^，都是对称差集
 print(s ^ s1)
 ```
-
+## 集合生成式
+![image](https://user-images.githubusercontent.com/71583369/149731145-1f8ff955-6441-4ce6-9975-8ff25ae6bc42.png)
 
 
 
