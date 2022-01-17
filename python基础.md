@@ -582,9 +582,29 @@ print(s1.issuperset(s))  #True
 '''判断两个集合是否没有交集，有交集为False,没有为True'''
 print(s.isdisjoint(s1))
 ```
+## 集合的数学操作
+![image](https://user-images.githubusercontent.com/71583369/149728875-c74fdbe5-4dfe-4177-adba-c614f969fe7e.png)
 
+```
+# 数学操作
+'''交集操作'''
+s={10,20,30,40}
+s1={20,30,50,60,70}
+print(s.intersection(s1))   #intersection等价于&,都是交集操作
+print(s & s1)
 
+'''并集操作'''
+print(s.union(s1))  #union等价于|，并集操作
+print(s | s1)
 
+'''差集操作'''
+print(s.difference(s1)) #difference等价于-，差集操作
+print(s-s1)
+
+'''对称差集'''
+print(s.symmetric_difference(s1)) #symmetric_difference等价于^，都是对称差集
+print(s ^ s1)
+```
 
 
 
