@@ -516,9 +516,28 @@ items=[10,20,30]
 a = { soce.upper():items for soce,items in zip(soce,items)} #生成式
 print(a)
 ```
+## 元组
+![image](https://user-images.githubusercontent.com/71583369/149715547-1d1ae99f-e84d-45b3-8f3d-4ddf98334d61.png)
+```
+# 元组的创建
+t = ('hello','python',80)
+t1 = tuple(('hello','python'))
+print(t,t1)
 
+t2 = ('python',) # 当元组为一个值时，需要加上逗号
+t3 = 'hello','python','old' #小括号可省略
+```
+## 为什么要将设计成不可变序列
+![image](https://user-images.githubusercontent.com/71583369/149717510-592a0fd3-dd8c-475e-9782-06bb7e258f42.png)
 
-
+## 元组的遍历
+```
+# 元组遍历
+t = ('hello','python',80)
+for item in t:
+    print(item)
+```
+## 集合
 
 
 
