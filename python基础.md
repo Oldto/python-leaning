@@ -508,7 +508,14 @@ for item in a:
 ## 字典特点
 ![image](https://user-images.githubusercontent.com/71583369/149694833-ad3295b5-c28c-4111-84b3-dd8d39acf597.png)
 
-
+## 字典生成式
+![image](https://user-images.githubusercontent.com/71583369/149699871-b0299ada-da5b-4ef6-ad50-7dd9dad36ef2.png)
+```
+soce=['hsah','uii','yu']
+items=[10,20,30]
+a = { soce.upper():items for soce,items in zip(soce,items)} #生成式
+print(a)
+```
 
 
 
