@@ -495,6 +495,11 @@ a['马六']=22 #增加key-value
 a['马六']=50 #修改
 del a['马六'] #删除指定的key
 a.clear()   #清空字典
+
+#视图模式
+keys = a.keys() #获取所有的key
+values = a.values() #获取所有的value
+items = a.items() #获取所有的key-value
 ```
 
 
