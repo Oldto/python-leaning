@@ -566,4 +566,29 @@ t.discard(500) #删除不存在元素不报错
 t.pop() #随机删除任意元素
 t.clear() #清空元素
 ```
+## 集合之间的关系
+![image](https://user-images.githubusercontent.com/71583369/149726845-117c4330-c522-4e80-b2e1-a00a50d6e5de.png)
+```
+s = {10,20,30,40}
+s1 = {10,40,60,50,70,20,30}
+s3 = {40,30,20,10}
+'''判断两个集合是否相等,只要元素相同就相等'''
+print(s == s3)
+print(s != s3)
+'''判断s是否为s1的子集'''
+print(s.issubset(s1)) #True
+'''判断s1是否为s的超集'''
+print(s1.issuperset(s))  #True
+'''判断两个集合是否没有交集，有交集为False,没有为True'''
+print(s.isdisjoint(s1))
+```
+
+
+
+
+
+
+
+
+
 
