@@ -45,3 +45,14 @@ finally:
 ```
 ## 异常类型
 ![image](https://user-images.githubusercontent.com/71583369/150486509-c4192df9-1a29-4075-8861-26e12ba2c81d.png)
+## 引用traceback模块打印异常信息
+![image](https://user-images.githubusercontent.com/71583369/150487536-98cf3f50-9172-4890-b07f-ab720dae84f9.png)
+```
+# traceback模块引用
+import traceback
+try:
+    print('---------------------')
+    print(1/0)
+except:
+    traceback.print_exc()
+```
