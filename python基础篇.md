@@ -613,8 +613,17 @@ print(s ^ s1)
 a = {item*item for item in range(1,10)}
 print(a)
 ```
+## 变量
+变量分为局部变量和全局变量，局部变量在函数体内部可以使用，在函数体外部不可以使用，如需要使用需要在变量前加上global；全局变量可以在函数体外部和函数体内部使用。
+```
+def fun():
+    global age
+    age=20
+    print(age)
+fun()
+print(age)
 
-
+```
 
 
 
