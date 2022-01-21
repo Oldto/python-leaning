@@ -43,3 +43,5 @@ else:
 finally:
     print('程序退出')
 ```
+## 异常类型
+![image](https://user-images.githubusercontent.com/71583369/150486509-c4192df9-1a29-4075-8861-26e12ba2c81d.png)
